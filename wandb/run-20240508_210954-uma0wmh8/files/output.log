@@ -1,0 +1,31 @@
+Output folder: output/teatime_seperate_180k [08/05 21:10:05]
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 180/180 [08/05 21:10:33]
+Loading Training Cameras [08/05 21:10:33]
+Loading Test Cameras [08/05 21:10:48]
+Number of points at initialisation :  25549 [08/05 21:10:48]
+Num classes:  256 [08/05 21:10:56]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+Training progress:   0%|                                                                                                                                                                                                                                             | 0/60000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "train_prune.py", line 325, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_prune.py", line 117, in training
+    logits = classifier(objects)
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 453, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

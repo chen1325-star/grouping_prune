@@ -9,7 +9,7 @@ fi
 
 dataset_name="$1"
 scale="$2"
-dataset_folder="data/$dataset_name"
+dataset_folder="/scratch/jiasi_root/jiasi98/zxuechen/dataset_segmentation/data/$dataset_name"
 
 if [ ! -d "$dataset_folder" ]; then
     echo "Error: Folder '$dataset_folder' does not exist."
@@ -22,3 +22,5 @@ python train.py    -s $dataset_folder -r ${scale}  -m output/${dataset_name} --c
 
 # Segmentation rendering using trained model
 python render.py -m output/${dataset_name} --num_classes 256 --images images
+
+#bash script/train_lerf.sh figurines 1

@@ -1,0 +1,74 @@
+Output folder: output/figurines_sort_class [01/05 03:37:22]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 303/303 [01/05 03:41:31]
+Loading Training Cameras [01/05 03:41:33]
+Loading Test Cameras [01/05 03:45:12]
+Number of points at initialisation :  50613 [01/05 03:45:12]
+Num classes:  256 [01/05 03:45:13]
+[38mic| gaussians.get_xyz.shape: torch.Size([179939, 3])
+Training progress:   0%|                                                                                                                                                                                                                                                  | 0/3 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "train_sort_class_2.py", line 372, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_sort_class_2.py", line 145, in training
+    ic(objects.shape())
+TypeError: 'torch.Size' object is not callable

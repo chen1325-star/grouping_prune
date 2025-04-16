@@ -1,0 +1,46 @@
+Output folder: output/teatime_sort_from1m [27/06 15:30:22]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 180/180 [27/06 15:31:22]
+Loading Training Cameras [27/06 15:31:22]
+Traceback (most recent call last):
+  File "train_sort_2.py", line 346, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_sort_2.py", line 44, in training
+    gaussians.load_ply(os.path.join(start_pointcloud,"point_cloud","iteration_"+str(args.loaded_iteration),"point_cloud.ply"))
+  File "/home/zxuechen/gaussian-grouping/scene/gaussian_model.py", line 434, in load_ply
+    plydata = PlyData.read(path)
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/plyfile.py", line 401, in read
+    (must_close, stream) = _open_stream(stream, 'read')
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/plyfile.py", line 481, in _open_stream
+    return (True, open(stream, read_or_write[0] + 'b'))
+FileNotFoundError: [Errno 2] No such file or directory: '/scratch/jiasi_root/jiasi98/zxuechen/dataset_segmentation/checkpoint/teatime/point_cloud/iteration_-1/point_cloud.ply'
+Loading Test Cameras [27/06 15:32:17]
+Number of points at initialisation :  25549 [27/06 15:32:17]

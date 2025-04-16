@@ -1,0 +1,228 @@
+{
+    "os": "Linux-4.18.0-372.75.1.el8_6.x86_64-x86_64-with-glibc2.17",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-05-03T19:33:07.738405",
+    "startedAt": "2024-05-03T19:33:06.011738",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-s",
+        "/scratch/jiasi_root/jiasi98/zxuechen/dataset_segmentation/data/figurines",
+        "-r",
+        "1",
+        "-m",
+        "output/figurines_sort",
+        "--config_file",
+        "config/gaussian_dataset/train.json",
+        "--train_split",
+        "--start_pointcloud",
+        "/home/zxuechen/gaussian-grouping/output/figurines_seperate_180k",
+        "--prune_iterations",
+        "2",
+        "--port",
+        "6006"
+    ],
+    "state": "running",
+    "program": "train_save.py",
+    "codePathLocal": "train_save.py",
+    "codePath": "train_save.py",
+    "git": {
+        "remote": "https://github.com/lkeab/gaussian-grouping.git",
+        "commit": "1297d57868c9a089d4df83c8c6aa0334ffdfe8ef"
+    },
+    "email": "xzhan394@ucr.edu",
+    "root": "/home/zxuechen/gaussian-grouping",
+    "host": "gl1509.arc-ts.umich.edu",
+    "username": "zxuechen",
+    "executable": "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2865.62575,
+        "min": 1200.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2499.999,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2499.999,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2499.999,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2499.999,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3600.028,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3600.023,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 19.990234375,
+            "used": 10.702491760253906
+        }
+    },
+    "gpu": "NVIDIA A40",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A40",
+            "memory_total": 48305799168
+        },
+        {
+            "name": "NVIDIA A40",
+            "memory_total": 48305799168
+        }
+    ],
+    "memory": {
+        "total": 376.28675842285156
+    }
+}

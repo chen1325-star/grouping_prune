@@ -1,0 +1,77 @@
+
+Output folder: output/figurines_sort [03/05 15:33:22]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 303/303 [03/05 15:35:23]
+Loading Training Cameras [03/05 15:35:23]
+Loading Test Cameras [03/05 15:40:08]
+Number of points at initialisation :  50613 [03/05 15:40:10]
+Num classes:  256 [03/05 15:40:18]
+[38mic| gaussians.get_xyz.shape: torch.Size([179939, 3])
+Training progress:   0%|                                                    | 0/60000 [00:00<?, ?it/s]
+[ITER 1] Evaluating train: L1 0.042110091447830206 PSNR 23.65917205810547 [03/05 15:44:06]
+Training progress:   0%|                                                    | 0/60000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "train_save.py", line 325, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_save.py", line 151, in training
+    scene.save_no_obj_ftr(iteration)
+  File "/home/zxuechen/gaussian-grouping/scene/__init__.py", line 96, in save_no_obj_ftr
+    self.gaussians.save_ply_no_obj_ftr(os.path.join(point_cloud_path, "point_cloud_no_obj_ftr.ply"))
+  File "/home/zxuechen/gaussian-grouping/scene/gaussian_model.py", line 409, in save_ply_no_obj_ftr
+    elements[:] = list(map(tuple, attributes))
+ValueError: could not assign tuple of length 62 to structure with 78 fields.

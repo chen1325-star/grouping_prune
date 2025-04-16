@@ -1,0 +1,32 @@
+Output folder: output/figurines_sort [29/04 02:01:49]
+
+
+
+
+
+
+Reading camera 303/303 [29/04 02:02:03]
+Loading Training Cameras [29/04 02:02:03]
+Loading Test Cameras [29/04 02:02:38]
+Number of points at initialisation :  50613 [29/04 02:02:38]
+Num classes:  256 [29/04 02:02:49]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+Training progress:   0%|                                                                                                  | 0/3 [00:00<?, ?it/s]
+[ITER 1] Evaluating train: L1 0.02603612318634987 PSNR 27.235770797729494 [29/04 02:03:14]
+[ITER 1] Saving Gaussians [29/04 02:03:14]
+[ITER 1] Saving Checkpoint [29/04 02:03:54]
+[ITER 2] Evaluating train: L1 0.02603612318634987 PSNR 27.235770797729494 [29/04 02:04:11]
+[ITER 2] Saving Gaussians [29/04 02:04:11]
+1 [29/04 02:04:50]
+Before prune iteration, number of gaussians: 3598368 [29/04 02:04:50]
+2 [29/04 02:04:50]
+Training progress:   0%|                                                                                                  | 0/3 [00:00<?, ?it/s][38mic| import_score.shape: torch.Size([3598368, 1])
+[38mic| self._xyz.shape: torch.Size([3598368, 3])
+Traceback (most recent call last):
+  File "train_sort.py", line 336, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_sort.py", line 206, in training
+    gaussians.sort_gaussians(
+  File "/home/zxuechen/gaussian-grouping/scene/gaussian_model.py", line 623, in sort_gaussians
+    ic(new_xyz.shape)
+UnboundLocalError: local variable 'new_xyz' referenced before assignment

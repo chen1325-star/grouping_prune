@@ -1,0 +1,123 @@
+Output folder: output/ramen_seperate_180k [30/04 19:03:04]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 135/135 [30/04 19:03:49]
+Loading Training Cameras [30/04 19:03:50]
+Loading Test Cameras [30/04 19:06:57]
+Number of points at initialisation :  30076 [30/04 19:06:57]
+Num classes:  256 [30/04 19:07:23]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+
+
+
+
+
+
+
+
+
+Training progress:   0%|                                        | 90/60000 [02:54<8:24:24,  1.98it/s, Loss=2.5707647]
+Before prune iteration, number of gaussians: 3598368 [30/04 19:10:21]
+Training progress:   0%|                                       | 100/60000 [02:57<6:58:01,  2.39it/s, Loss=2.5161803][38mic| import_score.shape: torch.Size([3598368, 1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training progress:   2%|▋                                     | 1000/60000 [04:25<1:19:30, 12.37it/s, Loss=0.6674082]
+[ITER 1000] Evaluating train: L1 0.14722370058298112 PSNR 14.57749080657959 [30/04 19:11:49]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training progress:   3%|█▏                                    | 1920/60000 [05:44<1:21:07, 11.93it/s, Loss=0.4222778]Traceback (most recent call last):
+  File "train_prune.py", line 325, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_prune.py", line 133, in training
+    loss = (1.0 - opt.lambda_dssim) * Ll1 + opt.lambda_dssim * (1.0 - ssim(image, gt_image)) + loss_obj
+  File "/home/zxuechen/gaussian-grouping/utils/loss_utils.py", line 46, in ssim
+    window = window.cuda(img1.get_device())
+KeyboardInterrupt

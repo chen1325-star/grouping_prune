@@ -1,0 +1,35 @@
+
+Output folder: output/ramen/ramen_seperate_180k [25/06 15:44:06]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 87/135
+Traceback (most recent call last):
+  File "train_prune.py", line 325, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_prune.py", line 42, in training
+    scene = Scene(dataset, gaussians)
+  File "/home/zxuechen/gaussian-grouping/scene/__init__.py", line 44, in __init__
+    scene_info = sceneLoadTypeCallbacks["Colmap"](args.source_path, args.images, args.eval, args.object_path, n_views=args.n_views, random_init=args.random_init, train_split=args.train_split)
+  File "/home/zxuechen/gaussian-grouping/scene/dataset_readers.py", line 146, in readColmapSceneInfo
+    cam_infos_unsorted = readColmapCameras(cam_extrinsics=cam_extrinsics, cam_intrinsics=cam_intrinsics, images_folder=os.path.join(path, reading_dir), objects_folder=os.path.join(path, object_dir))
+  File "/home/zxuechen/gaussian-grouping/scene/dataset_readers.py", line 97, in readColmapCameras
+    image = Image.open(image_path) if os.path.exists(image_path) else None
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/PIL/Image.py", line 3256, in open
+    prefix = fp.read(16)
+KeyboardInterrupt

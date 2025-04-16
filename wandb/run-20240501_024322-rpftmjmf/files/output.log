@@ -1,0 +1,108 @@
+
+Output folder: output/figurines_sort [01/05 02:43:47]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 303/303 [01/05 02:48:38]
+Loading Training Cameras [01/05 02:48:42]
+Loading Test Cameras [01/05 02:57:49]
+Number of points at initialisation :  50613 [01/05 02:57:50]
+Num classes:  256 [01/05 02:57:52]
+[38mic| gaussians.get_xyz.shape: torch.Size([179939, 3])
+Training progress:   0%|                                                                                                                                                                                                                                                  | 0/3 [00:00<?, ?it/s]
+[ITER 1] Evaluating train: L1 0.03622916415333748 PSNR 24.656520462036134 [01/05 03:10:10]
+[ITER 1] Saving Gaussians [01/05 03:10:10]
+[ITER 1] Saving Checkpoint [01/05 03:10:16]
+[ITER 2] Evaluating train: L1 0.03622916415333748 PSNR 24.656520462036134 [01/05 03:10:20]
+[ITER 2] Saving Gaussians [01/05 03:10:20]
+Before prune iteration, number of gaussians: 179939 [01/05 03:10:22]
+Training progress:   0%|                                                                                                                                                                                                                                                  | 0/3 [00:00<?, ?it/s][38mic| Error: Failed to access the underlying source code for analysis. Was ic() invoked in a REPL (e.g. from the command line), a frozen application (e.g. packaged with PyInstaller), or did the underlying source code change during execution?
+[38mic| Error: Failed to access the underlying source code for analysis. Was ic() invoked in a REPL (e.g. from the command line), a frozen application (e.g. packaged with PyInstaller), or did the underlying source code change during execution?
+[38mic| Error: Failed to access the underlying source code for analysis. Was ic() invoked in a REPL (e.g. from the command line), a frozen application (e.g. packaged with PyInstaller), or did the underlying source code change during execution?
+[38mic| Error: Failed to access the underlying source code for analysis. Was ic() invoked in a REPL (e.g. from the command line), a frozen application (e.g. packaged with PyInstaller), or did the underlying source code change during execution?
+[38mic| import_score.shape: torch.Size([179939])
+[38mic| self._xyz.shape: torch.Size([179939, 3])
+tensor([[  71.1811,   -7.3460,  -13.7027],
+        [  21.8364,   18.9857,  -50.8363],
+        [ 178.3742, -100.5927,  -22.5727],
+        ...,
+        [   4.2811,    0.5981,    8.4266],
+        [  -4.6776,    1.0020,    6.3519],
+        [  -4.7462,    0.9723,    6.2412]], device='cuda:0') [01/05 03:10:24]
+[ITER 2] Saving Checkpoint [01/05 03:10:24]
+[38mic| new_xyz.shape: torch.Size([179939, 3])
+[38mic| self._features_dc.shape: torch.Size([179939, 1, 3])
+Training progress:   0%|                                                                                                                                                                                                                                                  | 0/3 [12:29<?, ?it/s]
+[ITER 3] Evaluating train: L1 0.0362292155623436 PSNR 24.656518173217776 [01/05 03:10:27]
+[ITER 3] Saving Gaussians [01/05 03:10:27]
+[ITER 3] Saving Checkpoint [01/05 03:10:29]
+Training complete. [01/05 03:10:30]

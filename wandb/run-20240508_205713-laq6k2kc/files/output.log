@@ -1,0 +1,190 @@
+
+Output folder: output/bear_seperate_180k [08/05 20:57:27]
+
+
+
+
+
+
+
+Reading camera 96/96 [08/05 20:57:44]
+Loading Training Cameras [08/05 20:57:45]
+Loading Test Cameras [08/05 20:59:39]
+Number of points at initialisation :  63659 [08/05 20:59:40]
+Num classes:  256 [08/05 21:00:00]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+
+
+
+
+
+
+
+
+
+
+Training progress:   0%|▎                                                                                                                                                                                                                | 100/60000 [02:10<6:02:34,  2.75it/s, Loss=1.9698995]
+Before prune iteration, number of gaussians: 3598368 [08/05 21:02:12]
+Training progress:   0%|▎                                                                                                                                                                                                                | 100/60000 [02:10<6:02:34,  2.75it/s, Loss=1.9698995][38mic| import_score.shape: torch.Size([3598368, 1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training progress:   2%|███▍                                                                                                                                                                                                            | 1000/60000 [03:31<1:15:51, 12.96it/s, Loss=0.3875360]
+[ITER 1000] Evaluating train: L1 0.13054552972316744 PSNR 15.42158203125 [08/05 21:03:34]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training progress:   7%|█████████████▋                                                                                                                                                                                                  | 3940/60000 [07:18<1:11:26, 13.08it/s, Loss=0.2683446]Traceback (most recent call last):
+  File "train_prune.py", line 325, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_prune.py", line 200, in training
+    gaussians.optimizer.step()
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/optim/adam.py", line 157, in step
+    adam(params_with_grad,
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/optim/adam.py", line 213, in adam
+    func(params,
+  File "/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/lib/python3.8/site-packages/torch/optim/adam.py", line 290, in _single_tensor_adam
+    step = step_t.item()
+KeyboardInterrupt

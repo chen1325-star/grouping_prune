@@ -1,0 +1,18 @@
+Output folder: output/figurines_sort [29/04 01:54:13]
+
+
+
+
+
+
+Reading camera 303/303 [29/04 01:54:28]
+Loading Training Cameras [29/04 01:54:28]
+Loading Test Cameras [29/04 01:55:02]
+Number of points at initialisation :  50613 [29/04 01:55:02]
+Num classes:  256 [29/04 01:55:14]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+Training progress:   0%|                                                                                                                      | 0/3 [00:00<?, ?it/s]
+[ITER 1] Evaluating train: L1 0.02603612318634987 PSNR 27.235770797729494 [29/04 01:55:40]
+[ITER 1] Saving Gaussians [29/04 01:55:41]
+[ITER 1] Saving Checkpoint [29/04 01:56:21]
+[ITER 2] Evaluating train: L1 0.02603612318634987 PSNR 27.235770797729494 [29/04 01:56:35]

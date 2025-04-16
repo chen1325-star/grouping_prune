@@ -18,7 +18,7 @@ from simple_knn._C import distCUDA2
 from utils.graphics_utils import BasicPointCloud
 from utils.general_utils import strip_symmetric, build_scaling_rotation
 from scipy.spatial import KDTree
-
+from icecream import ic
 class GaussianModel:
 
     def setup_functions(self):
@@ -370,6 +370,21 @@ class GaussianModel:
             l.append('obj_dc_{}'.format(i))
         return l
 
+    def construct_list_of_attributes_no_objftr(self):
+        l = ['x', 'y', 'z', 'nx', 'ny', 'nz']
+        # All channels except the 3 DC
+        for i in range(self._features_dc.shape[1]*self._features_dc.shape[2]):
+            l.append('f_dc_{}'.format(i))
+        for i in range(self._features_rest.shape[1]*self._features_rest.shape[2]):
+            l.append('f_rest_{}'.format(i))
+        l.append('opacity')
+        for i in range(self._scaling.shape[1]):
+            l.append('scale_{}'.format(i))
+        for i in range(self._rotation.shape[1]):
+            l.append('rot_{}'.format(i))
+        # for i in range(self._objects_dc.shape[1]*self._objects_dc.shape[2]):
+        #     l.append('obj_dc_{}'.format(i))
+        return l
     def save_ply(self, path):
         mkdir_p(os.path.dirname(path))
 
@@ -386,6 +401,26 @@ class GaussianModel:
 
         elements = np.empty(xyz.shape[0], dtype=dtype_full)
         attributes = np.concatenate((xyz, normals, f_dc, f_rest, opacities, scale, rotation, obj_dc), axis=1)
+        elements[:] = list(map(tuple, attributes))
+        el = PlyElement.describe(elements, 'vertex')
+        PlyData([el]).write(path)
+
+    def save_ply_no_obj_ftr(self, path):
+        mkdir_p(os.path.dirname(path))
+
+        xyz = self._xyz.detach().cpu().numpy()
+        normals = np.zeros_like(xyz)
+        f_dc = self._features_dc.detach().transpose(1, 2).flatten(start_dim=1).contiguous().cpu().numpy()
+        f_rest = self._features_rest.detach().transpose(1, 2).flatten(start_dim=1).contiguous().cpu().numpy()
+        opacities = self._opacity.detach().cpu().numpy()
+        scale = self._scaling.detach().cpu().numpy()
+        rotation = self._rotation.detach().cpu().numpy()
+        # obj_dc = self._objects_dc.detach().transpose(1, 2).flatten(start_dim=1).contiguous().cpu().numpy()
+
+        dtype_full = [(attribute, 'f4') for attribute in self.construct_list_of_attributes_no_objftr()]
+
+        elements = np.empty(xyz.shape[0], dtype=dtype_full)
+        attributes = np.concatenate((xyz, normals, f_dc, f_rest, opacities, scale, rotation), axis=1)
         elements[:] = list(map(tuple, attributes))
         el = PlyElement.describe(elements, 'vertex')
         PlyData([el]).write(path)
@@ -594,7 +629,64 @@ class GaussianModel:
         self.prune_points(prune_mask)
 
         torch.cuda.empty_cache()
+    def prune_opacity(self, percent):
+        sorted_tensor, _ = torch.sort(self.get_opacity, dim=0)
+        index_nth_percentile = int(percent * (sorted_tensor.shape[0] - 1))
+        value_nth_percentile = sorted_tensor[index_nth_percentile]
+        prune_mask = (self.get_opacity <= value_nth_percentile).squeeze()
 
+        # big_points_vs = self.max_radii2D > max_screen_size
+        # big_points_ws = self.get_scaling.max(dim=1).values > 0.1 * extent
+        # prune_mask = torch.logical_or(torch.logical_or(prune_mask, big_points_vs), big_points_ws)
+        self.prune_points(prune_mask)
+
+        torch.cuda.empty_cache()
+
+    def prune_gaussians(self, percent, import_score: list):
+        ic(import_score.shape)
+        sorted_tensor, _ = torch.sort(import_score, dim=0)
+        index_nth_percentile = int(percent * (sorted_tensor.shape[0] - 1))
+        value_nth_percentile = sorted_tensor[index_nth_percentile]
+        prune_mask = (import_score <= value_nth_percentile).squeeze()
+        self.prune_points(prune_mask)
+
+    def sort_gaussians(self, import_score: list):
+        ic(import_score.shape)
+        ic(self._xyz.shape)
+        # sorted_tensor, _ = torch.sort(import_score, dim=0)
+        sorted_indices = torch.argsort(import_score, descending=True, dim=0)
+        new_xyz = self._xyz[sorted_indices]
+        ic(new_xyz.shape)
+        # print(type(new_xyz))
+        print(new_xyz)
+        ic(self._features_dc.shape)
+        new_features_dc = self._features_dc[sorted_indices]
+        # ic(new_features_dc)
+        # ic(self._features_rest)
+        new_features_rest = self._features_rest[sorted_indices]
+        # ic(new_features_rest)
+        new_opacity = self._opacity[sorted_indices]
+        new_scaling = self._scaling[sorted_indices]
+        new_rotation = self._rotation[sorted_indices]
+        new_objects_dc = self._objects_dc[sorted_indices]
+        self.xyz_gradient_accum = self.xyz_gradient_accum[sorted_indices]
+        self.denom = self.denom[sorted_indices]
+        self.max_radii2D = self.max_radii2D[sorted_indices]
+
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_xyz, "xyz")
+        self._xyz = optimizable_tensors["xyz"]
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_features_dc, "f_dc")
+        self._features_dc = optimizable_tensors["f_dc"]
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_features_rest, "f_rest")
+        self._features_rest = optimizable_tensors["f_rest"]
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_opacity, "opacity")
+        self._opacity = optimizable_tensors["opacity"]
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_scaling, "scaling")
+        self._scaling = optimizable_tensors["scaling"]
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_rotation, "rotation")
+        self._rotation = optimizable_tensors["rotation"]
+        optimizable_tensors = self.replace_tensor_to_optimizer(new_objects_dc, "rotation")
+        self._objects_dc = optimizable_tensors["rotation"]
     def add_densification_stats(self, viewspace_point_tensor, update_filter):
         self.xyz_gradient_accum[update_filter] += torch.norm(viewspace_point_tensor.grad[update_filter,:2], dim=-1, keepdim=True)
         self.denom[update_filter] += 1

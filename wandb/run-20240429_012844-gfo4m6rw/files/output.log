@@ -1,0 +1,18 @@
+Output folder: output/figurines_sort [29/04 01:28:54]
+
+
+
+
+
+Reading camera 303/303 [29/04 01:29:07]
+Loading Training Cameras [29/04 01:29:07]
+Loading Test Cameras [29/04 01:29:43]
+Number of points at initialisation :  50613 [29/04 01:29:43]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+Training progress:   0%|                                                                                                                      | 0/3 [00:00<?, ?it/s]
+Training progress:   0%|                                                                                                                      | 0/3 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "train_sort.py", line 334, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_sort.py", line 137, in training
+    pre_trained_size = int(args.small_num)
+AttributeError: 'Namespace' object has no attribute 'small_num'

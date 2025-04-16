@@ -1,0 +1,40 @@
+Output folder: output/figurines_sort [29/04 01:32:46]
+
+
+
+
+
+Reading camera 303/303 [29/04 01:32:59]
+Loading Training Cameras [29/04 01:32:59]
+Loading Test Cameras [29/04 01:33:28]
+Number of points at initialisation :  50613 [29/04 01:33:28]
+[38mic| gaussians.get_xyz.shape: torch.Size([3598368, 3])
+Training progress:   0%|                                                                                                                      | 0/3 [00:00<?, ?it/s]
+Num classes:  256 [29/04 01:33:38]
+[ITER 1] Evaluating train: L1 0.02603612318634987 PSNR 27.235770797729494 [29/04 01:34:02]
+[ITER 1] Saving Gaussians [29/04 01:34:02]
+[ITER 1] Saving Checkpoint [29/04 01:34:44]
+[ITER 2] Evaluating train: L1 0.02603612318634987 PSNR 27.235770797729494 [29/04 01:35:01]
+
+Training progress:   0%|                                                                                                                      | 0/3 [00:00<?, ?it/s][38mic| import_score.shape: torch.Size([3598368, 1])
+Before prune iteration, number of gaussians: 3598368 [29/04 01:35:38]
+0.9499773230531174 [29/04 01:35:38]
+<class 'torch.Tensor'> [29/04 01:35:39]
+tensor([[[-0.3447,  2.2009, -0.4389]],
+        [[-0.3447,  2.2009, -0.4389]],
+        [[-0.3447,  2.2009, -0.4389]],
+        ...,
+        [[-0.3447,  2.2009, -0.4389]],
+        [[-0.3447,  2.2009, -0.4389]],
+        [[-0.3447,  2.2009, -0.4389]]], device='cuda:0') [29/04 01:35:39]
+[ITER 2] Saving Checkpoint [29/04 01:35:39]
+Traceback (most recent call last):
+  File "train_sort.py", line 334, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_sort.py", line 113, in training
+    render_pkg = render(viewpoint_cam, gaussians, pipe, background)
+  File "/home/zxuechen/gaussian-grouping/gaussian_renderer/__init__.py", line 80, in render
+    shs = pc.get_features
+  File "/home/zxuechen/gaussian-grouping/scene/gaussian_model.py", line 113, in get_features
+    return torch.cat((features_dc, features_rest), dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 1 but got size 15 for tensor number 1 in the list.

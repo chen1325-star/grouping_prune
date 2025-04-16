@@ -19,3 +19,5 @@ fi
 
 # Remove the selected object
 python edit_object_removal.py -m ${output_folder} --config_file ${config_file}
+
+#/scratch/jiasi_root/jiasi98/zxuechen/Gaussian-Grouping/OUTPUT/seg/figurines

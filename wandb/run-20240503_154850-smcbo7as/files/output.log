@@ -1,0 +1,75 @@
+
+Output folder: output/figurines_sort [03/05 15:49:03]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reading camera 303/303 [03/05 15:51:04]
+Loading Training Cameras [03/05 15:51:05]
+Traceback (most recent call last):
+  File "train_save.py", line 325, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint,args.start_pointcloud, args.loaded_iteration,args.debug_from, args.use_wandb)
+  File "train_save.py", line 42, in training
+    scene = Scene(dataset, gaussians)
+  File "/home/zxuechen/gaussian-grouping/scene/__init__.py", line 73, in __init__
+    self.train_cameras[resolution_scale] = cameraList_from_camInfos(scene_info.train_cameras, resolution_scale, args)
+  File "/home/zxuechen/gaussian-grouping/utils/camera_utils.py", line 60, in cameraList_from_camInfos
+    camera_list.append(loadCam(args, id, c, resolution_scale))
+  File "/home/zxuechen/gaussian-grouping/utils/camera_utils.py", line 50, in loadCam
+    return Camera(colmap_id=cam_info.uid, R=cam_info.R, T=cam_info.T,
+  File "/home/zxuechen/gaussian-grouping/scene/cameras.py", line 58, in __init__
+    self.camera_center = self.world_view_transform.inverse()[3, :3]
+KeyboardInterrupt

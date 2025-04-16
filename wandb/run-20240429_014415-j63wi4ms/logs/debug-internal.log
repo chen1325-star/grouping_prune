@@ -1,0 +1,333 @@
+2024-04-29 01:44:15,117 INFO    StreamThr :3344420 [internal.py:wandb_internal():86] W&B internal server running at pid: 3344420, started at: 2024-04-29 01:44:15.114275
+2024-04-29 01:44:15,119 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status
+2024-04-29 01:44:15,120 INFO    WriterThread:3344420 [datastore.py:open_for_write():87] open: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/run-j63wi4ms.wandb
+2024-04-29 01:44:15,128 DEBUG   SenderThread:3344420 [sender.py:send():379] send: header
+2024-04-29 01:44:15,249 DEBUG   SenderThread:3344420 [sender.py:send():379] send: run
+2024-04-29 01:44:15,481 INFO    SenderThread:3344420 [dir_watcher.py:__init__():211] watching files in: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files
+2024-04-29 01:44:15,481 INFO    SenderThread:3344420 [sender.py:_start_run_threads():1124] run started: j63wi4ms with start time 1714369455.115657
+2024-04-29 01:44:15,482 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: check_version
+2024-04-29 01:44:15,482 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: check_version
+2024-04-29 01:44:16,039 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: run_start
+2024-04-29 01:44:16,069 DEBUG   HandlerThread:3344420 [system_info.py:__init__():26] System info init
+2024-04-29 01:44:16,069 DEBUG   HandlerThread:3344420 [system_info.py:__init__():41] System info init done
+2024-04-29 01:44:16,069 INFO    HandlerThread:3344420 [system_monitor.py:start():194] Starting system monitor
+2024-04-29 01:44:16,070 INFO    SystemMonitor:3344420 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-29 01:44:16,070 INFO    HandlerThread:3344420 [system_monitor.py:probe():214] Collecting system info
+2024-04-29 01:44:16,080 INFO    SystemMonitor:3344420 [interfaces.py:start():190] Started cpu monitoring
+2024-04-29 01:44:16,081 INFO    SystemMonitor:3344420 [interfaces.py:start():190] Started disk monitoring
+2024-04-29 01:44:16,083 INFO    SystemMonitor:3344420 [interfaces.py:start():190] Started gpu monitoring
+2024-04-29 01:44:16,083 INFO    SystemMonitor:3344420 [interfaces.py:start():190] Started memory monitoring
+2024-04-29 01:44:16,084 INFO    SystemMonitor:3344420 [interfaces.py:start():190] Started network monitoring
+2024-04-29 01:44:16,085 DEBUG   HandlerThread:3344420 [system_info.py:probe():150] Probing system
+2024-04-29 01:44:16,108 DEBUG   HandlerThread:3344420 [system_info.py:_probe_git():135] Probing git
+2024-04-29 01:44:16,125 DEBUG   HandlerThread:3344420 [system_info.py:_probe_git():143] Probing git done
+2024-04-29 01:44:16,125 DEBUG   HandlerThread:3344420 [system_info.py:probe():198] Probing system done
+2024-04-29 01:44:16,125 DEBUG   HandlerThread:3344420 [system_monitor.py:probe():223] {'os': 'Linux-4.18.0-372.75.1.el8_6.x86_64-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-04-29T05:44:16.085964', 'startedAt': '2024-04-29T05:44:15.071970', 'docker': None, 'cuda': None, 'args': ('-s', '/scratch/jiasi_root/jiasi98/zxuechen/dataset_segmentation/data/figurines', '-r', '1', '-m', 'output/figurines_sort', '--config_file', 'config/gaussian_dataset/train.json', '--train_split', '--start_pointcloud', '/scratch/jiasi_root/jiasi98/zxuechen/dataset_segmentation/checkpoint/figurines', '--prune_iterations', '2', '--port', '6006'), 'state': 'running', 'program': 'train_sort.py', 'codePathLocal': 'train_sort.py', 'codePath': 'train_sort.py', 'git': {'remote': 'https://github.com/lkeab/gaussian-grouping.git', 'commit': '1297d57868c9a089d4df83c8c6aa0334ffdfe8ef'}, 'email': 'xzhan394@ucr.edu', 'root': '/home/zxuechen/gaussian-grouping', 'host': 'gl1513.arc-ts.umich.edu', 'username': 'zxuechen', 'executable': '/scratch/jiasi_root/jiasi98/shared_env/gaussian_grouping/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2953.56571875, 'min': 1200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3600.001, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}], 'disk': {'/': {'total': 19.990234375, 'used': 10.61905288696289}}, 'gpu': 'NVIDIA A40', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A40', 'memory_total': 48305799168}], 'memory': {'total': 376.28671646118164}}
+2024-04-29 01:44:16,125 INFO    HandlerThread:3344420 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-29 01:44:16,125 INFO    HandlerThread:3344420 [system_monitor.py:probe():227] Publishing system info
+2024-04-29 01:44:16,126 DEBUG   HandlerThread:3344420 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-29 01:44:16,482 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/conda-environment.yaml
+2024-04-29 01:44:25,670 DEBUG   HandlerThread:3344420 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-29 01:44:25,675 INFO    HandlerThread:3344420 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-29 01:44:25,698 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:25,699 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-29 01:44:25,699 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:44:25,699 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-29 01:44:25,892 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-29 01:44:25,892 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: python_packages
+2024-04-29 01:44:25,894 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:44:25,895 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:44:25,899 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:44:26,011 DEBUG   SenderThread:3344420 [sender.py:send():379] send: telemetry
+2024-04-29 01:44:26,012 DEBUG   SenderThread:3344420 [sender.py:send():379] send: telemetry
+2024-04-29 01:44:26,012 DEBUG   SenderThread:3344420 [sender.py:send():379] send: config
+2024-04-29 01:44:26,012 DEBUG   SenderThread:3344420 [sender.py:send():379] send: telemetry
+2024-04-29 01:44:26,012 DEBUG   SenderThread:3344420 [sender.py:send():379] send: run
+2024-04-29 01:44:26,039 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/ld5hjb6c-wandb-metadata.json
+2024-04-29 01:44:26,089 INFO    SenderThread:3344420 [sender.py:send_run():997] updated run: j63wi4ms
+2024-04-29 01:44:26,089 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:26,487 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/conda-environment.yaml
+2024-04-29 01:44:26,487 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/config.yaml
+2024-04-29 01:44:26,487 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:26,487 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-metadata.json
+2024-04-29 01:44:26,487 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/requirements.txt
+2024-04-29 01:44:28,490 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:30,492 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:31,132 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:32,494 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:34,495 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:36,140 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:36,497 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:38,499 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:40,501 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:40,895 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:44:40,895 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:44:40,897 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:44:41,962 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:42,503 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:44:46,966 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:47,506 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/config.yaml
+2024-04-29 01:44:52,034 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:44:55,895 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:44:55,895 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:44:55,935 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:44:57,958 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:02,959 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:07,960 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:10,895 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:45:10,895 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:45:10,935 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:45:12,982 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:14,522 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:45:16,084 DEBUG   SystemMonitor:3344420 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-29 01:45:16,085 DEBUG   SenderThread:3344420 [sender.py:send():379] send: stats
+2024-04-29 01:45:18,085 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:23,086 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:25,895 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:45:25,895 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:45:25,897 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:45:26,540 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:45:27,545 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:45:28,247 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:33,247 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:38,248 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:40,895 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:45:40,895 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:45:40,935 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:45:43,954 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:45,003 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:45,032 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:45,033 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:45,036 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:45,554 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:45:46,085 DEBUG   SenderThread:3344420 [sender.py:send():379] send: stats
+2024-04-29 01:45:48,738 DEBUG   SenderThread:3344420 [sender.py:send():379] send: telemetry
+2024-04-29 01:45:49,742 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:45:49,767 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:49,788 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:49,788 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00102/render_1_2e0248c8c041a3ab2b86.png with policy now
+2024-04-29 01:45:49,789 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:49,789 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:49,795 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:50,019 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/yalb7c7z-media/images/train_view_frame_00102/render_1_2e0248c8c041a3ab2b86.png
+2024-04-29 01:45:50,025 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:50,025 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00102/ground_truth_2_2bd4b2e5a4c65db1d32e.png with policy now
+2024-04-29 01:45:50,051 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:50,051 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:50,052 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:50,054 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:50,284 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/zqkhgavi-media/images/train_view_frame_00102/ground_truth_2_2bd4b2e5a4c65db1d32e.png
+2024-04-29 01:45:50,312 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:50,312 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00091/render_3_68cdc83c68ac1003fbed.png with policy now
+2024-04-29 01:45:50,340 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:50,341 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:50,341 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:50,343 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:50,555 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:50,555 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00091/ground_truth_4_e3d02b4c5814f85e8188.png with policy now
+2024-04-29 01:45:50,570 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/config.yaml
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00091/render_3_68cdc83c68ac1003fbed.png
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00102/ground_truth_2_2bd4b2e5a4c65db1d32e.png
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00091/ground_truth_4_e3d02b4c5814f85e8188.png
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00102/render_1_2e0248c8c041a3ab2b86.png
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00102
+2024-04-29 01:45:50,571 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00091
+2024-04-29 01:45:50,578 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/va7qtt42-media/images/train_view_frame_00091/render_3_68cdc83c68ac1003fbed.png
+2024-04-29 01:45:50,611 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:50,611 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:50,611 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:50,617 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:50,831 INFO    wandb-upload_1:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/p7bx37zb-media/images/train_view_frame_00091/ground_truth_4_e3d02b4c5814f85e8188.png
+2024-04-29 01:45:51,069 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:51,069 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00292/render_5_3cb72d7e70364e3c4273.png with policy now
+2024-04-29 01:45:51,098 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:51,098 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:51,098 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:51,100 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:51,149 INFO    wandb-upload_2:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/5yvikk1b-media/images/train_view_frame_00102/render_1_2e0248c8c041a3ab2b86.png
+2024-04-29 01:45:51,180 INFO    wandb-upload_3:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/lybbkn7k-media/images/train_view_frame_00091/render_3_68cdc83c68ac1003fbed.png
+2024-04-29 01:45:51,182 INFO    wandb-upload_1:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/e8lo9npu-media/images/train_view_frame_00091/ground_truth_4_e3d02b4c5814f85e8188.png
+2024-04-29 01:45:51,182 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/j5th7bfb-media/images/train_view_frame_00102/ground_truth_2_2bd4b2e5a4c65db1d32e.png
+2024-04-29 01:45:51,356 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:51,356 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00292/ground_truth_6_ad2f11d3f7fea868d6c9.png with policy now
+2024-04-29 01:45:51,384 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:51,384 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:51,384 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:51,387 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:51,425 INFO    wandb-upload_4:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/kgmlbkji-media/images/train_view_frame_00292/render_5_3cb72d7e70364e3c4273.png
+2024-04-29 01:45:51,572 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:45:51,573 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00292/render_5_3cb72d7e70364e3c4273.png
+2024-04-29 01:45:51,573 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00292/ground_truth_6_ad2f11d3f7fea868d6c9.png
+2024-04-29 01:45:51,573 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images
+2024-04-29 01:45:51,573 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00292
+2024-04-29 01:45:51,644 INFO    wandb-upload_2:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/oyr87580-media/images/train_view_frame_00292/ground_truth_6_ad2f11d3f7fea868d6c9.png
+2024-04-29 01:45:51,654 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:51,654 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00236/render_7_31eae89b40b5df8b011e.png with policy now
+2024-04-29 01:45:51,681 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:51,682 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:51,682 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:51,684 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:51,897 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:51,897 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00236/ground_truth_8_a3622547952225e35db2.png with policy now
+2024-04-29 01:45:51,908 INFO    wandb-upload_1:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/v3n5q0bb-media/images/train_view_frame_00292/render_5_3cb72d7e70364e3c4273.png
+2024-04-29 01:45:51,911 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/90uekdfk-media/images/train_view_frame_00236/render_7_31eae89b40b5df8b011e.png
+2024-04-29 01:45:51,926 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:51,926 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:51,926 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:51,929 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:51,961 INFO    wandb-upload_3:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/clyc7mic-media/images/train_view_frame_00292/ground_truth_6_ad2f11d3f7fea868d6c9.png
+2024-04-29 01:45:52,157 INFO    wandb-upload_4:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/tj90es6i-media/images/train_view_frame_00236/ground_truth_8_a3622547952225e35db2.png
+2024-04-29 01:45:52,180 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:52,180 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00047/render_9_44f445ea41d00d93be4c.png with policy now
+2024-04-29 01:45:52,206 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:52,206 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:52,206 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:52,209 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:52,426 INFO    wandb-upload_2:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/a5nc67is-media/images/train_view_frame_00047/render_9_44f445ea41d00d93be4c.png
+2024-04-29 01:45:52,433 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:45:52,433 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00047/ground_truth_10_42e50e89e20185647f37.png with policy now
+2024-04-29 01:45:52,459 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:52,460 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:52,460 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:52,462 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:52,527 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:52,528 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:52,528 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:52,530 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:52,576 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:45:52,576 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00236/render_7_31eae89b40b5df8b011e.png
+2024-04-29 01:45:52,576 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00236/ground_truth_8_a3622547952225e35db2.png
+2024-04-29 01:45:52,576 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00047/ground_truth_10_42e50e89e20185647f37.png
+2024-04-29 01:45:52,576 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00047/render_9_44f445ea41d00d93be4c.png
+2024-04-29 01:45:52,577 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images
+2024-04-29 01:45:52,577 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00236
+2024-04-29 01:45:52,577 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00047
+2024-04-29 01:45:52,606 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:45:52,607 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:45:52,607 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:45:52,610 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:45:52,697 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/whsnuqt9-media/images/train_view_frame_00047/ground_truth_10_42e50e89e20185647f37.png
+2024-04-29 01:45:52,898 INFO    wandb-upload_4:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/l707l1jg-media/images/train_view_frame_00236/render_7_31eae89b40b5df8b011e.png
+2024-04-29 01:45:52,903 INFO    wandb-upload_2:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/b554o2w1-media/images/train_view_frame_00236/ground_truth_8_a3622547952225e35db2.png
+2024-04-29 01:45:52,916 INFO    wandb-upload_1:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/5w45tnol-media/images/train_view_frame_00047/render_9_44f445ea41d00d93be4c.png
+2024-04-29 01:45:53,043 INFO    wandb-upload_3:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/xdroesg7-media/images/train_view_frame_00047/ground_truth_10_42e50e89e20185647f37.png
+2024-04-29 01:45:53,578 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:45:54,582 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:45:55,611 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:00,612 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:05,612 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:10,613 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:13,465 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:46:13,466 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:46:13,466 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:46:15,734 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:16,086 DEBUG   SenderThread:3344420 [sender.py:send():379] send: stats
+2024-04-29 01:46:21,087 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:26,088 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:26,478 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-29 01:46:28,407 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:46:28,466 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:46:28,466 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:46:31,577 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:37,134 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:37,183 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:46:42,135 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:43,407 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:46:43,466 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:46:43,466 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:46:46,087 DEBUG   SenderThread:3344420 [sender.py:send():379] send: stats
+2024-04-29 01:46:46,831 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:46,832 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:46,832 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:46,836 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:47,252 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:46:47,252 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00102/render_14_2e0248c8c041a3ab2b86.png with policy now
+2024-04-29 01:46:47,252 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:47,279 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:47,280 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:47,280 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:47,284 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:47,485 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/ugr34ttw-media/images/train_view_frame_00102/render_14_2e0248c8c041a3ab2b86.png
+2024-04-29 01:46:47,538 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:46:47,538 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00091/render_15_68cdc83c68ac1003fbed.png with policy now
+2024-04-29 01:46:47,563 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:46:47,563 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00102/render_14_2e0248c8c041a3ab2b86.png
+2024-04-29 01:46:47,564 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00091/render_15_68cdc83c68ac1003fbed.png
+2024-04-29 01:46:47,564 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00102
+2024-04-29 01:46:47,564 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00091
+2024-04-29 01:46:47,574 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:47,575 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:47,575 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:47,578 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:47,806 INFO    wandb-upload_2:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/gsl9um6i-media/images/train_view_frame_00091/render_15_68cdc83c68ac1003fbed.png
+2024-04-29 01:46:47,897 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:46:47,897 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00292/render_16_3cb72d7e70364e3c4273.png with policy now
+2024-04-29 01:46:47,926 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:47,926 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:47,926 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:47,931 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:47,940 INFO    wandb-upload_3:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/qurk22dw-media/images/train_view_frame_00102/render_14_2e0248c8c041a3ab2b86.png
+2024-04-29 01:46:48,152 INFO    wandb-upload_4:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/vj76kz03-media/images/train_view_frame_00292/render_16_3cb72d7e70364e3c4273.png
+2024-04-29 01:46:48,155 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/cqj5y2i0-media/images/train_view_frame_00091/render_15_68cdc83c68ac1003fbed.png
+2024-04-29 01:46:48,191 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:46:48,191 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00236/render_17_31eae89b40b5df8b011e.png with policy now
+2024-04-29 01:46:48,219 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:48,219 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:48,219 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:48,222 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:48,458 INFO    wandb-upload_1:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/lyd13zj9-media/images/train_view_frame_00236/render_17_31eae89b40b5df8b011e.png
+2024-04-29 01:46:48,466 DEBUG   SenderThread:3344420 [sender.py:send():379] send: files
+2024-04-29 01:46:48,466 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file media/images/train_view_frame_00047/render_18_44f445ea41d00d93be4c.png with policy now
+2024-04-29 01:46:48,494 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:48,494 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:48,495 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:48,496 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:48,503 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:48,504 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:48,504 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:48,506 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:48,543 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-29 01:46:48,543 DEBUG   SenderThread:3344420 [sender.py:send():379] send: history
+2024-04-29 01:46:48,544 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: summary_record
+2024-04-29 01:46:48,546 INFO    SenderThread:3344420 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 01:46:48,566 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/wandb-summary.json
+2024-04-29 01:46:48,566 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00047/render_18_44f445ea41d00d93be4c.png
+2024-04-29 01:46:48,566 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00236/render_17_31eae89b40b5df8b011e.png
+2024-04-29 01:46:48,567 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00292/render_16_3cb72d7e70364e3c4273.png
+2024-04-29 01:46:48,567 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00236
+2024-04-29 01:46:48,567 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00047
+2024-04-29 01:46:48,567 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/media/images/train_view_frame_00292
+2024-04-29 01:46:48,756 INFO    wandb-upload_3:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/tkl5h2mb-media/images/train_view_frame_00047/render_18_44f445ea41d00d93be4c.png
+2024-04-29 01:46:48,901 INFO    wandb-upload_1:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/qa3rwkc5-media/images/train_view_frame_00292/render_16_3cb72d7e70364e3c4273.png
+2024-04-29 01:46:48,903 INFO    wandb-upload_0:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/2bo12zsn-media/images/train_view_frame_00236/render_17_31eae89b40b5df8b011e.png
+2024-04-29 01:46:49,124 INFO    wandb-upload_2:3344420 [upload_job.py:push():131] Uploaded file /tmp/tmpxu73eqdfwandb/zdnvu9x2-media/images/train_view_frame_00047/render_18_44f445ea41d00d93be4c.png
+2024-04-29 01:46:50,572 INFO    Thread-12 :3344420 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/files/output.log
+2024-04-29 01:46:52,550 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:46:57,551 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:47:02,551 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:47:07,552 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:47:09,347 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 01:47:09,347 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 01:47:09,347 DEBUG   SenderThread:3344420 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 01:47:13,468 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:47:16,087 DEBUG   SenderThread:3344420 [sender.py:send():379] send: stats
+2024-04-29 01:47:19,089 DEBUG   HandlerThread:3344420 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 01:47:20,144 INFO    cpu       :3344420 [interfaces.py:monitor():140] Process cpu has exited.
+2024-04-29 01:47:20,145 DEBUG   SystemMonitor:3344420 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-29 01:47:20,145 DEBUG   SystemMonitor:3344420 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-29 01:47:20,146 DEBUG   SenderThread:3344420 [sender.py:send():379] send: stats
+2024-04-29 01:47:20,447 WARNING StreamThr :3344420 [internal.py:is_dead():414] Internal process exiting, parent pid 3344330 disappeared
+2024-04-29 01:47:20,447 ERROR   StreamThr :3344420 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [handler.py:finish():866] shutting down handler
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [interfaces.py:finish():202] Joined disk monitor
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [interfaces.py:finish():202] Joined memory monitor
+2024-04-29 01:47:21,146 INFO    HandlerThread:3344420 [interfaces.py:finish():202] Joined network monitor
+2024-04-29 01:47:21,147 INFO    WriterThread:3344420 [datastore.py:close():296] close: /home/zxuechen/gaussian-grouping/wandb/run-20240429_014415-j63wi4ms/run-j63wi4ms.wandb
+2024-04-29 01:47:21,147 INFO    SenderThread:3344420 [sender.py:finish():1546] shutting down sender
+2024-04-29 01:47:22,066 INFO    MainThread:3344420 [internal.py:handle_exit():76] Internal process exited

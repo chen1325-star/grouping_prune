@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "train_prune.py", line 323, in <module>
+    network_gui.init(args.ip, args.port)
+  File "/home/zxuechen/gaussian-grouping/gaussian_renderer/network_gui.py", line 30, in init
+    listener.bind((host, port))
+OSError: [Errno 98] Address already in use
